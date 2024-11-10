@@ -15,11 +15,11 @@ brew install python@3.11
 brew link python@3.11
 poetry env use python3.11
 poetry install --no-root
-python get-pip.py
 poetry run pip install torch==2.1.2 -f https://download.pytorch.org/whl/cpu.html
 poetry lock
 poetry install --no-root
 poetry shell
+poetry show
 python train.py
 
 
